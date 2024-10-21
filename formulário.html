@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="styles/styleForm.css" rel="stylesheet">
+        <title>Formulário Freelancer</title>
+    </head>
+    <body>
+        <header class="cabecalho">
+            <nav class="cabecalho__menu">
+                <a class="cabecalho__link" href="index.html">Home</a>
+                <a class="cabecalho__link" href="about.html">Sobre mim</a>
+                <a class="cabecalho__link" href="educ.html">Formação</a>
+                <a class="cabecalho__link" href="experiencias.html">Experiências</a>
+                <a class="cabecalho__link" href="habilidades.html">Habilidades</a>
+                <a class="cabecalho__link">Formulário</a>
+            </nav>
+        </header>
+        <main class="responsivo-container">
+            <h2 class="container__texto__titulo">Formulário Freelancer</h2>
+            <form id="freelancerForm" class="container__texto__descricao" style="padding: 20px;" >
+                <fieldset class="border p-4">
+                    <legend class="w-auto">DETALHES PEDIDO</legend>
+                    <div class="mb-3">
+                        <label for="nome" class="form-label">Nome <b>*</b></label>
+                        <input type="text" id="nome" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="sobrenome" class="form-label">Sobrenome <b>*</b></label>
+                        <input type="text" id="sobrenome" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="telefone" class="form-label">Telefone <b>*</b></label>
+                        <input type="tel" id="telefone" class="form-control" placeholder="(99) 99999-9999" pattern="\(\d{2}\) \d{5}-\d{4}" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">E-mail <b>*</b></label>
+                        <input type="email" id="email" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="mensagem" class="form-label">Mensagem <b>*</b></label>
+                        <br>
+                        <textarea id="mensagem" class="form-control" rows="5" required></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="lingua" class="form-label">Língua <b>*</b></label>
+                        <select id="lingua" class="form-select" required>
+                            <option value="Português (pt-br)">Português (pt-br)</option>
+                            <option value="Inglês">Inglês</option>
+                            <option value="Espanhol">Espanhol</option>
+                            <option value="Francês">Francês</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="arquivo" class="form-label">Protótipo (Requisitos) <b>*</b></label>
+                        <br>
+                        <input type="file" id="arquivo" class="form-control" accept=".pdf, .doc, .docx, .jpeg, .png" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="linguagens" class="form-label">Linguagens preferidas <b>*</b></label>
+                        <br>
+                        <select id="linguagens" class="form-select" style="height: 100px; width: 150px; font-size: 100%;" multiple required>
+                            <option value="Java">Java</option>
+                            <option value="Python">Python</option>
+                            <option value="JavaScript">JavaScript</option>
+                            <option value="ABAP">ABAP</option>
+                        </select>
+                        (Para fazer várias escolhas, mantenha a tecla CTRL pressionada)
+                    </div>
+                    <div class="mb-3">
+                        <br>
+                        <label class="form-label">Banco de Dados <b>*</b></label>
+                        <div>
+                            <input type="radio" id="mysql" name="banco" value="MySQL" required>
+                            <label for="mysql">MySQL</label>
+                            <input type="radio" id="hana" name="banco" value="Hana" required>
+                            <label for="hana">Hana</label>
+                            <input type="radio" id="outro" name="banco" value="Outro" required>
+                            <label for="outro">Outro</label>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <br>
+                        <label class="form-label">Turno para Reuniões <b>*</b></label>
+                        <div>
+                            <input type="checkbox" id="manha" value="Manhã">
+                            <label for="manha">Manhã</label>
+                            <input type="checkbox" id="tarde" value="Tarde">
+                            <label for="tarde">Tarde</label>
+                            <input type="checkbox" id="noite" value="Noite">
+                            <label for="noite">Noite</label>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <br>
+                        <label for="horario" class="form-label">Horário sugerido <b>*</b></label>
+                        <input type="time" id="horario" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="data" class="form-label">Data prevista de entrega <b>*</b></label>
+                        <input type="date" id="data" class="form-control" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary" >Enviar</button>
+                    <button type="reset" class="btn btn-secondary">Limpar</button>
+                </fieldset>
+            </form>
+        </main>
+        <footer>
+            <div class="rodape">
+                <p>Recife - Pernambuco - Brasil</p>
+                <p>Termos de uso - Política de privacidade</p>
+                <p>Copyright ₢ 2024 - Todos os direitos reservados</p>
+            </div>
+        </footer>
+    </body>
+</html>
